@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="principal.css">
+    <title>ex5</title>
+
+    <script language="javascript">
+        function enviarDados()
+        {
+            var valor1, valor2, valor3, valor4, media;
+            valor1 = document.frmValores.valor1.value;
+            valor2 = document.frmValores.valor2.value;
+            valor3 = document.frmValores.valor3.value;
+            valor4 = document.frmValores.valor4.value;
+
+            media = (parseInt(valor1) + parseInt(valor2) + parseInt(valor3) + parseInt(valor4)) / 4
+
+            document.getElementById("txtSaidaMedia").innerHTML = "A média artimetica é: " + media;
+        }
+    </script>
+  </head>
+<body>
+    <form name="frmValores">
+        1° Valor: <input type="number" name="valor1"><br>
+        2° Valor: <input type="number" name="valor2"><br>
+        3° Valor: <input type="number" name="valor3"><br>
+        4° Valor: <input type="number" name="valor4"><br>
+
+         <input type="button" value="Calcular" onclick="enviarDados();">
+
+    </form>
+   <p id="txtSaidaMedia"></p>
+   
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>ex17</title>
+	<link rel="stylesheet" href="principal.css">
+	<script lang="Javascript">
+		function calcular()
+    {
+		var x, y, result;
+
+    y = document.ocalculo.tab.value;
+
+for (x = 1; x < 11; x++) 
+{
+   result= y * x 
+  document.getElementById("txtSaidaValor" + x).innerHTML = "<td>" + y + " x " + x + " = " + result + "</td>";
+}
+}
+	</script>
+</head>
+
+<body>
+
+	<form name="ocalculo">
+		Informe um valor: <input type="text" name="tab" value="0"><br>
+    <input type="button" value="Tabuada" onclick="calcular();">
+	</form>
+
+<table border="2">
+    <br>
+    <tr id="txtSaidaValor1"></tr>
+    <tr id="txtSaidaValor2"></tr>
+    <tr id="txtSaidaValor3"></tr>
+    <tr id="txtSaidaValor4"></tr>
+    <tr id="txtSaidaValor5"></tr>
+    <tr id="txtSaidaValor6"></tr>
+    <tr id="txtSaidaValor7"></tr>
+    <tr id="txtSaidaValor8"></tr>
+    <tr id="txtSaidaValor9"></tr>
+    <tr id="txtSaidaValor10"></tr>
+</table>
+</body>
+
+</html>
